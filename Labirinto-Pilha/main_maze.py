@@ -6,7 +6,7 @@ from collections import deque
 s = deque()
 
 
-maze_csv_path = "Labirinto-Pilha/labirinto1.txt"  # Substitua pelo caminho correto
+maze_csv_path = "Labirinto-Pilha/labirinto1.txt"
 maze = Maze() 
 
 maze.load_from_csv(maze_csv_path)
