@@ -25,11 +25,35 @@ def load_from(fileName):
     
     return g
 
-#Testes
+def carregar_teste():
+    g = Graph(4)
+    g.M = [
+        [0, 1, 1, 0],
+        [1, 0, 1, 1],
+        [1, 1, 0, 0],
+        [0, 1, 0, 0]
+    ]
+    g.L = [
+        [1, 2],
+        [0, 2, 3],
+        [0, 1],
+        [1]
+    ]
+    return g
+
+print("Teste com a classe Graph\n")
+g = carregar_teste()
+g.print()
+g.bfs_path(0, 3)
+g.dfs_stack()
+print("\n\n")
+
+#Testes com os arquvivos
 
 files = ["Grafos/pcv4.txt", "Grafos/pcv10.txt", 
          "Grafos/pcv50.txt", "Grafos/pcv177.txt"]
 
+print("Teste com os arquivos\n\n")
 for file in files:
     g = load_from(file)
     g.print()
