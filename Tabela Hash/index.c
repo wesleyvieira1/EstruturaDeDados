@@ -82,7 +82,7 @@ int main() {
         struct Objeto* atual = tabelaHash[pos1]->listas[pos2];
         while (atual != NULL) {
             if (atual->chave == chaveBusca) {
-                printf("Encontrado: %s (Chave: %d)\n", atual->nome, atual->chave);
+                printf("Encontrado! %s (Chave: %d)\n", atual->nome, atual->chave);
                 break;
             }
             atual = atual->prox;
